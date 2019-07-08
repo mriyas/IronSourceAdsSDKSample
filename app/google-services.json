@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "365674037970",
+    "firebase_url": "https://newsworld.firebaseio.com",
+    "project_id": "newsworld",
+    "storage_bucket": "newsworld.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:365674037970:android:7dda4acffca64e11",
+        "android_client_info": {
+          "package_name": "com.news.world.ml"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "365674037970-uu872v53192nlueapl8p9gtcmn0btu55.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-5ug1NHQTTJVK-Zouzg2eH_WrmhdAmrY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "365674037970-uu872v53192nlueapl8p9gtcmn0btu55.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
