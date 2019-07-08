@@ -88,7 +88,7 @@ public class NewsListFragment<T> extends Fragment {
             if(i%4==0) {
                 AdsDummyObject adsDummyObject = new AdsDummyObject();
                 adsDummyObject.setAdsSize(ISBannerSize.BANNER);
-                mItems.add((T) adsDummyObject);
+                mItems.add(i,(T) adsDummyObject);
             }
         }
         return mItems;

@@ -5,6 +5,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:visibility="visible"
     android:id="@+id/ll_bannerContainer"
+    android:minHeight="40dp"
+    android:background="@color/adsColor"
     android:gravity="center"
     android:orientation="vertical"
     tools:context=".ui.activity.MainActivity"
