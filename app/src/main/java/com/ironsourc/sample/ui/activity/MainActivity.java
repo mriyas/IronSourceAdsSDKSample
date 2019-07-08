@@ -24,19 +24,12 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setOffscreenPageLimit(4);
         TabLayout tabs = findViewById(R.id.tabs);
         tabs.setupWithViewPager(viewPager);
-        FloatingActionButton fab = findViewById(R.id.fab);
         /**
          *Ad Units should be in the type of IronSource.Ad_Unit.AdUnitName, example
          */
         IronSource.init(this, "973b9c1d", IronSource.AD_UNIT.OFFERWALL, IronSource.AD_UNIT.INTERSTITIAL, IronSource.AD_UNIT.REWARDED_VIDEO, IronSource.AD_UNIT.BANNER);
 
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
     }
     protected void onResume() {
         super.onResume();
