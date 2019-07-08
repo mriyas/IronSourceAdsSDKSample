@@ -1,11 +1,13 @@
 package com.ironsourc.sample.ui.fragments;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.support.annotation.Nullable;
@@ -15,6 +17,7 @@ import android.arch.lifecycle.Observer;
 import android.arch.lifecycle.ViewModelProviders;
 
 import com.ironsourc.sample.R;
+import com.ironsourc.sample.ui.activity.SecondActivity;
 import com.ironsourc.sample.ui.ads.BannerAdsUtility;
 import com.ironsourc.sample.ui.view_model.PageViewModel;
 import com.ironsource.mediationsdk.IronSource;
@@ -63,10 +66,18 @@ public class PlaceholderFragment extends Fragment {
             Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         final TextView textView = root.findViewById(R.id.section_label);
+        final Button btn_navigate = root.findViewById(R.id.btn_navigate);
+        btn_navigate.setVisibility(View.VISIBLE);
         pageViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
+            }
+        });
+        btn_navigate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getActivity(), SecondActivity.class));
             }
         });
         final LinearLayout ll_bannerContainer = root.findViewById(R.id.ll_bannerContainer);
